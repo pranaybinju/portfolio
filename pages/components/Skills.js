@@ -22,7 +22,7 @@ const Skills = () => {
   const animation = `${animationKeyframes} 2s ease-in-out infinite`;
   return (
     <>
-      <Text fontWeight={"bold"} mx="3rem" fontSize={"3rem"}>
+      <Text fontWeight={"bold"} mx="3rem" mb="0.5rem" fontSize={"3rem"}>
         <span
           style={{
             backgroundColor: "#f3ec78",
@@ -32,7 +32,7 @@ const Skills = () => {
             "-webkit-background-clip": "text",
             "-moz-background-clip": "text",
             "-webkit-text-fill-color": "transparent",
-            "-moz-text-fill-color": "transparent",
+            MozTextFillColor: "transparent",
           }}
         >
           Skills
@@ -40,31 +40,31 @@ const Skills = () => {
       </Text>
 
       <Flex>
-        <Box bg="#fafafa" width={"100%"} mb="1rem" h="25rem">
+        <Box width={"100%"} bg="#fafafa" mb="8rem" h="25rem">
           <Box px="5rem" position="relative" height={"100%"} width="100%">
             {[
               {
                 id: 1,
                 x: "15%",
-                y: "10%",
-                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg",
+                y: "15%",
+                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
               },
               {
                 id: 2,
                 x: "25%",
-                y: "35%",
-                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg",
+                y: "40%",
+                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
               },
               {
                 id: 3,
                 x: "40%",
                 y: "22%",
-                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg",
               },
               {
                 id: 4,
                 x: "65%",
-                y: "10%",
+                y: "15%",
                 src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
               },
               {
@@ -77,18 +77,18 @@ const Skills = () => {
                 id: 6,
                 x: "65%",
                 y: "50%",
-                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
               },
               {
                 id: 7,
                 x: "55%",
                 y: "45%",
-                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
+                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
               },
               {
                 id: 8,
                 x: "20%",
-                y: "65%",
+                y: "70%",
                 src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
               },
               {
@@ -101,13 +101,13 @@ const Skills = () => {
                 id: 10,
                 x: "35%",
                 y: "45%",
-                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg",
               },
               {
                 id: 11,
                 x: "50%",
                 y: "22%",
-                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
               },
               {
                 id: 12,

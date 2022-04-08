@@ -45,7 +45,7 @@ const Intro = () => {
                 "-webkit-background-clip": "text",
                 "-moz-background-clip": "text",
                 "-webkit-text-fill-color": "transparent",
-                "-moz-text-fill-color": "transparent",
+                MozTextFillColor: "transparent",
               }}
             >
               Pranay Binju
@@ -59,14 +59,9 @@ const Intro = () => {
           >
             Senior Front-End Engineer at Kiprosh
           </Text>
-          <Text
-            fontSize={"1.2rem"}
-            fontWeight={300}
-            textAlign="center"
-            w={"auto"}
-          >
+          <Text fontSize={"1.1rem"} color="gray" textAlign="center" w={"auto"}>
             {`Computer Science ❤️ , Unpresuming Engineer 👨‍💻 , Chess enthusiast ♘ , Curious about Cosmos 🌌 , 
-          Football fan ⚽️ , History and World Affairs afficionado 🌏 ,  and a Student for Life 🤓 .`}
+          Football fan ⚽️ , History and World Affairs afficionado 🌏 , a Student for Life 🤓 `}
           </Text>
         </motion.div>
         <motion.div
