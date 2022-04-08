@@ -1,11 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import { Box, Flex, Image, Text, chakra, keyframes } from "@chakra-ui/react";
-import {
-  motion,
-  useTransform,
-  useViewportScroll,
-  isValidMotionProp,
-} from "framer-motion";
+import { motion, isValidMotionProp } from "framer-motion";
 
 const ChakraBox = chakra(motion.div, {
   shouldForwardProp: isValidMotionProp,
@@ -19,7 +14,6 @@ const animationKeyframes = keyframes`
 const animation = `${animationKeyframes} 2s ease-in-out infinite`;
 
 const Skills = () => {
-  const animation = `${animationKeyframes} 2s ease-in-out infinite`;
   return (
     <>
       <Text fontWeight={"bold"} mx="3rem" mb="0.5rem" fontSize={"3rem"}>
@@ -29,9 +23,9 @@ const Skills = () => {
             backgroundImage:
               "linear-gradient( 45deg, #CA4246 30%, #E16541 60%, #F18F43 100% )",
             backgroundSize: "100%",
-            "-webkit-background-clip": "text",
-            "-moz-background-clip": "text",
-            "-webkit-text-fill-color": "transparent",
+            WebkitBackgroundClip: "text",
+            MozBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
             MozTextFillColor: "transparent",
           }}
         >
@@ -135,15 +129,6 @@ const Skills = () => {
                 display="flex"
                 justifyContent={"center"}
                 alignItems="center"
-                // animate={{ y: -5 }}
-                // transition={{
-                //   repeat: Infinity,
-                //   delay: 1,
-                //   repeatType: "reverse",
-                //   from: 0,
-                //   duration: 2,
-                //   ease: "backOut",
-                // }}
                 boxShadow={"md"}
               >
                 <Image width={10} height={10} src={datum.src} />

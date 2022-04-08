@@ -13,9 +13,9 @@ const Contributions = () => {
             backgroundImage:
               "linear-gradient( 45deg, #CA4246 30%, #E16541 60%, #F18F43 100% )",
             backgroundSize: "100%",
-            "-webkit-background-clip": "text",
-            "-moz-background-clip": "text",
-            "-webkit-text-fill-color": "transparent",
+            WebkitBackgroundClip: "text",
+            MozBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
             MozTextFillColor: "transparent",
           }}
         >
@@ -30,14 +30,20 @@ const Contributions = () => {
         mb="5rem"
       >
         <Flex
-          borderRadius={"md"}
+          borderRadius={"10px"}
           h={"fit-content"}
           boxShadow={"md"}
           direction={"column"}
         >
           <NextLink href="https://blog.kiprosh.com/author/pranay/" passHref>
             <Link target="_blank" _hover={{ textDecoration: "none" }}>
-              <Image w="100%" mb={"0.8rem"} src="./blog.png"></Image>
+              <Image
+                borderTopLeftRadius={"10px"}
+                borderTopRightRadius={"10px"}
+                w="100%"
+                mb={"0.8rem"}
+                src="./blog.png"
+              ></Image>
               <Text fontSize={"1.2rem"} px="0.8rem">
                 Tech Blogs:
               </Text>
@@ -49,7 +55,7 @@ const Contributions = () => {
           </NextLink>
         </Flex>
         <Flex
-          borderRadius={"md"}
+          borderRadius={"10px"}
           h={"fit-content"}
           boxShadow={"md"}
           direction={"column"}
@@ -60,9 +66,10 @@ const Contributions = () => {
           >
             <Link target="_blank" _hover={{ textDecoration: "none" }}>
               <Image
+                borderRadius={"10px"}
                 w="100%"
                 mb={"0.8rem"}
-                src="./customer-testimonial.png"
+                src="./testimonial.png"
               ></Image>
 
               <Text fontSize={"1.2rem"} px="0.8rem">
@@ -77,7 +84,7 @@ const Contributions = () => {
           </NextLink>
         </Flex>
         <Flex
-          borderRadius={"md"}
+          borderRadius={"10px"}
           h={"fit-content"}
           boxShadow={"md"}
           direction={"column"}
@@ -87,12 +94,17 @@ const Contributions = () => {
             passHref
           >
             <Link target="_blank" _hover={{ textDecoration: "none" }}>
-              <Image w="100%" mb={"0.8rem"} src="./star-rating.png"></Image>
+              <Image
+                borderRadius={"10px"}
+                w="100%"
+                mb={"0.8rem"}
+                src="./star.png"
+              ></Image>
               <Text fontSize={"1.2rem"} px="0.8rem">
                 Star-rating component:
               </Text>
               <Text color="gray" fontSize={"1rem"} px="0.8rem" pb="0.8rem">
-                A component to add your skill level in the form of stars,
+                A component to showcase your skill level in the form of stars,
                 contributed to the package readme-components
               </Text>
             </Link>

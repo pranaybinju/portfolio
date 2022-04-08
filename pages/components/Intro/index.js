@@ -42,9 +42,9 @@ const Intro = () => {
                 backgroundImage:
                   "linear-gradient( 45deg, #CA4246 30%, #E16541 60%, #F18F43 100% )",
                 backgroundSize: "100%",
-                "-webkit-background-clip": "text",
-                "-moz-background-clip": "text",
-                "-webkit-text-fill-color": "transparent",
+                WebkitBackgroundClip: "text",
+                MozBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
                 MozTextFillColor: "transparent",
               }}
             >
