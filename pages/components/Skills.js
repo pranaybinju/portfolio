@@ -89,7 +89,8 @@ const Skills = () => {
                 id: 9,
                 x: "30%",
                 y: "10%",
-                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+
+                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg",
               },
               {
                 id: 10,
@@ -114,6 +115,25 @@ const Skills = () => {
                 x: "75%",
                 y: "60%",
                 src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg",
+              },
+              {
+                id: 14,
+                x: "58%",
+                y: "70%",
+                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+              },
+              {
+                id: 15,
+                x: "32%",
+                y: "70%",
+                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+              },
+              {
+                id: 15,
+                x: "15%",
+                y: "45%",
+
+                src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
               },
             ].map((datum, index) => (
               <Box

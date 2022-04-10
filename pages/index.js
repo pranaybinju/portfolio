@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Content from "./components/Content";
-import { Box } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 export default function Home() {
   return (
@@ -19,16 +19,11 @@ export default function Home() {
       </Head>
       <Content />
       <footer className={styles.footer}>
-        {/* <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a> */}
+        <Flex justifyContent={"center"} alignItems="center">
+          <Text fontSize="0.8rem">
+            crafted with&nbsp; ❤️ &nbsp; by Pranay Binju
+          </Text>
+        </Flex>
       </footer>
     </Box>
   );
