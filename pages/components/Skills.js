@@ -150,6 +150,7 @@ const Skills = () => {
                 justifyContent={"center"}
                 alignItems="center"
                 boxShadow={"md"}
+                key={datum.id}
               >
                 <Image width={10} height={10} src={datum.src} />
               </Box>

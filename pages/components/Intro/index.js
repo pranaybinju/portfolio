@@ -36,7 +36,7 @@ const Intro = () => {
             fontWeight={"bold"}
             fontSize={"3rem"}
           >
-            I'm{" "}
+            {"I'm"}{" "}
             <span
               style={{
                 backgroundColor: "#f3ec78",

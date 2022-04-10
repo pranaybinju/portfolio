@@ -48,8 +48,9 @@ const Contributions = () => {
                 Tech Blogs:
               </Text>
               <Text fontSize={"1rem"} color="gray" px="0.8rem" pb="0.8rem">
-                I love to share my learnings in the form of tech blogs. Here are
-                all the tech blogs I've written for my current organization
+                {
+                  "I love to share my learnings in the form of tech blogs. Here are all the tech blogs I've written for my current organization"
+                }
               </Text>
             </Link>
           </NextLink>
