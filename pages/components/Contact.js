@@ -32,8 +32,9 @@ const Contact = () => {
       >
         <Flex justifyContent={"space-between"} direction={"column"}>
           <Text>
-            {`"I'm currently not looking out for new opportunites but I'm always
-            there to connect when I have the time. Just drop me a message!"`}
+            {
+              "I'm currently not looking out for new opportunites but I'm always there to connect when I have the time. Just drop me a message!"
+            }
           </Text>
           <Flex justifyContent={"space-between"}>
             <Flex alignItems="center">
