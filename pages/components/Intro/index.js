@@ -1,7 +1,8 @@
 import React from "react";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
-import { Namaste, WavingHand } from "./Greetings";
+import Namaste from "./Namaste";
+import WavingHand from "./WavingHand";
 
 const Intro = () => {
   const { scrollY } = useViewportScroll();
