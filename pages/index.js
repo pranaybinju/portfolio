@@ -16,6 +16,11 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@163;300;500&display=swap"
           rel="stylesheet"
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `history.scrollRestoration = "manual"`,
+          }}
+        />
       </Head>
       <Content />
       <footer className={styles.footer}>
