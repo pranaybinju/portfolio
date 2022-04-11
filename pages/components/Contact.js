@@ -31,14 +31,18 @@ const Contact = () => {
         mb="5rem"
       >
         <Flex justifyContent={"space-between"} direction={"column"}>
-          <Text>
-            {
-              "I'm currently not looking out for new opportunites but I'm always there to connect when I have the time. Just drop me a message!"
-            }
-          </Text>
+          <Text>{"Want to get in touch? Just drop me a message!"}</Text>
           <Flex justifyContent={"space-between"}>
             <Flex alignItems="center">
-              <Image mr="0.8rem" width={8} height={8} src={"./gmail.svg"} />
+              <Image
+                _hover={{
+                  transform: "scale(1.2)",
+                }}
+                mr="0.8rem"
+                width={8}
+                height={8}
+                src={"./gmail.svg"}
+              />
               <NextLink href="mailto:pranaybinju2810@gmail.com" passHref>
                 <Link textDecoration={"underline"} color="gray">
                   pranaybinju2810@gmail.com
@@ -54,7 +58,10 @@ const Contact = () => {
                 >
                   <Link>
                     <Image
-                      mr="0.8rem"
+                      _hover={{
+                        transform: "scale(1.2)",
+                      }}
+                      mr="0.5rem"
                       width={10}
                       height={10}
                       src={"./linkedin.svg"}
@@ -66,7 +73,14 @@ const Contact = () => {
                   passHref
                 >
                   <Link>
-                    <Image width={8} height={8} src={"./reddit.png"} />
+                    <Image
+                      _hover={{
+                        transform: "scale(1.2)",
+                      }}
+                      width={8}
+                      height={8}
+                      src={"./reddit.png"}
+                    />
                   </Link>
                 </NextLink>
               </Flex>
@@ -81,10 +95,13 @@ const Contact = () => {
               <NextLink href="https://github.com/pranaybinju" passHref>
                 <Link>
                   <Image
-                    mr="0.8rem"
+                    mr="0.5rem"
                     width={8}
                     height={8}
                     src={"./github.svg"}
+                    _hover={{
+                      transform: "scale(1.2)",
+                    }}
                   />
                 </Link>
               </NextLink>
@@ -94,17 +111,27 @@ const Contact = () => {
               >
                 <Link>
                   <Image
-                    mr="0.8rem"
+                    mr="0.5rem"
                     width={7}
                     height={7}
                     src={"./stack-overflow.svg"}
+                    _hover={{
+                      transform: "scale(1.2)",
+                    }}
                   />
                 </Link>
               </NextLink>
 
               <NextLink href="https://leetcode.com/pranaybinju2810/" passHref>
                 <Link>
-                  <Image width={7} height={7} src={"./leetcode.svg"} />
+                  <Image
+                    width={7}
+                    height={7}
+                    _hover={{
+                      transform: "scale(1.2)",
+                    }}
+                    src={"./leetcode.svg"}
+                  />
                 </Link>
               </NextLink>
             </Flex>
