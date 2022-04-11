@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
-import { SocialIcon } from "react-social-icons";
 import NextLink from "next/link";
 import { Link } from "@chakra-ui/react";
 
