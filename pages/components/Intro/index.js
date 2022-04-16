@@ -16,92 +16,218 @@ const Intro = () => {
   const x1 = useTransform(scrollY, [0, 850], ["-60%", "0vw"]);
 
   return (
-    <Box width={"100vw"} mb="1rem" height="300vh">
-      <Box height="100vh" display="flex" position="sticky" top="0px">
-        <motion.div
-          style={{
-            height: "100%",
-            width: "50vw",
-            padding: "2rem",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-            x: x1,
-          }}
-        >
-          <Text
-            textAlign="center"
-            mb="0.8rem"
-            fontWeight={"bold"}
-            fontSize={"3rem"}
-          >
-            {"I'm"}{" "}
-            <span
+    <Box w="100vh">
+      <Box display={["block", "block", "block", "none"]}>
+        <Box w="100%" display="flex" flex={1} flexDirection={"column"}>
+          <Box>
+            <Box
               style={{
-                backgroundColor: "#f3ec78",
-                backgroundImage:
-                  "linear-gradient( 45deg, #CA4246 30%, #E16541 60%, #F18F43 100% )",
-                backgroundSize: "100%",
-                WebkitBackgroundClip: "text",
-                MozBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                MozTextFillColor: "transparent",
+                height: "100%",
+
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+                flexDirection: "column",
               }}
             >
-              Pranay Binju
-            </span>
-          </Text>
-          <Text
-            textAlign="center"
-            fontWeight={500}
-            mb="0.8rem"
-            fontSize={"1.8rem"}
-          >
-            Senior Front-End Engineer at Kiprosh
-          </Text>
-          <Text fontSize={"1.1rem"} color="gray" textAlign="center" w={"auto"}>
-            {`Computer Science ❤️ , Unpresuming Engineer 👨‍💻 , Chess enthusiast ♘ , Curious about Cosmos 🌌 , 
-          Football fan ⚽️ , History and World Affairs afficionado 🌏 , a Student for Life 🤓 `}
-          </Text>
-        </motion.div>
-        <motion.div
-          style={{
-            height: "100%",
-            width: "50vw",
+              <Box mt="5rem">
+                <Image
+                  borderRadius={"50%"}
+                  src="me.png"
+                  width="180px"
+                  height="180px"
+                  objectFit={"cover"}
+                  boxShadow="lg"
+                />
+              </Box>
 
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
-            flexDirection: "column",
-            scale,
-            y,
-            x,
-          }}
-        >
-          <motion.div
+              <motion.div
+                style={{
+                  fontSize: headingFont,
+                  fontWeight: "bold",
+                  textAlign: "center",
+                }}
+              >
+                Hello <WavingHand /> ! Namaste <Namaste /> !!
+              </motion.div>
+            </Box>
+          </Box>
+
+          <Box
+            w="100%"
             style={{
-              marginTop,
+              padding: "2rem",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
             }}
           >
-            <Image
-              borderRadius={"50%"}
-              src="https://bit.ly/dan-abramov"
-              width="180"
-              height="180"
-            />
-          </motion.div>
+            <Text
+              textAlign="center"
+              mb="0.8rem"
+              fontWeight={"bold"}
+              fontSize={"3rem"}
+            >
+              {"I'm"}{" "}
+              <span
+                style={{
+                  backgroundColor: "#f3ec78",
+                  backgroundImage:
+                    "linear-gradient( 45deg, #CA4246 30%, #E16541 60%, #F18F43 100% )",
+                  backgroundSize: "100%",
+                  WebkitBackgroundClip: "text",
+                  MozBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  MozTextFillColor: "transparent",
+                }}
+              >
+                Pranay Binju
+              </span>
+            </Text>
+            <Text
+              textAlign="center"
+              fontWeight={500}
+              mb="0.8rem"
+              fontSize={"1.8rem"}
+            >
+              Senior Front-End Engineer at Kiprosh
+            </Text>
+            <Box
+              fontSize={"1.1rem"}
+              color="gray"
+              textAlign="center"
+              w={"30rem"}
+            >
+              <Box display="grid" gridTemplateColumns={"auto auto"}>
+                <Text>{`Computer Science ❤️ `}</Text>
+                <Text>{` Unpresuming Engineer 👨‍💻 `}</Text>
+              </Box>
 
+              <Box display="grid" gridTemplateColumns={"auto auto"}>
+                <Text>{`Chess enthusiast ♘ `}</Text>
+                <Text>{` Curious about Cosmos 🌌 `}</Text>
+              </Box>
+
+              <Box display="grid" gridTemplateColumns={"auto auto"}>
+                <Text>{`Football fan ⚽️ `}</Text>
+                <Text>{`a Student for Life 🤓 `}</Text>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+      <Box
+        display={["none", "none", "none", "block"]}
+        width={"100vw"}
+        mb="1rem"
+        height="300vh"
+      >
+        <Box height="100vh" display="flex" position="sticky" top="0px">
           <motion.div
             style={{
-              fontSize: headingFont,
-              fontWeight: "bold",
-              textAlign: "center",
+              height: "100%",
+              width: "50vw",
+              padding: "2rem",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: "column",
+              x: x1,
             }}
           >
-            Hello <WavingHand /> ! Namaste <Namaste /> !!
+            <Text
+              textAlign="center"
+              mb="0.8rem"
+              fontWeight={"bold"}
+              fontSize={"3rem"}
+            >
+              {"I'm"}{" "}
+              <span
+                style={{
+                  backgroundColor: "#f3ec78",
+                  backgroundImage:
+                    "linear-gradient( 45deg, #CA4246 30%, #E16541 60%, #F18F43 100% )",
+                  backgroundSize: "100%",
+                  WebkitBackgroundClip: "text",
+                  MozBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  MozTextFillColor: "transparent",
+                }}
+              >
+                Pranay Binju
+              </span>
+            </Text>
+            <Text
+              textAlign="center"
+              fontWeight={500}
+              mb="0.8rem"
+              fontSize={"1.8rem"}
+            >
+              Senior Front-End Engineer at Kiprosh
+            </Text>
+            <Box
+              fontSize={"1.1rem"}
+              color="gray"
+              textAlign="center"
+              w={"30rem"}
+            >
+              <Box display="grid" gridTemplateColumns={"auto auto"}>
+                <Text>{`Computer Science ❤️ `}</Text>
+                <Text>{` Unpresuming Engineer 👨‍💻 `}</Text>
+              </Box>
+
+              <Box display="grid" gridTemplateColumns={"auto auto"}>
+                <Text>{`Chess enthusiast ♘ `}</Text>
+                <Text>{` Curious about Cosmos 🌌 `}</Text>
+              </Box>
+
+              <Box display="grid" gridTemplateColumns={"auto auto"}>
+                <Text>{`Football fan ⚽️ `}</Text>
+                <Text>{`a Student for Life 🤓 `}</Text>
+              </Box>
+            </Box>
           </motion.div>
-        </motion.div>
+          <motion.div
+            style={{
+              height: "100%",
+              width: "50vw",
+
+              justifyContent: "center",
+              alignItems: "center",
+              display: "flex",
+              flexDirection: "column",
+              scale,
+              y,
+              x,
+            }}
+          >
+            <motion.div
+              style={{
+                marginTop,
+              }}
+            >
+              <Image
+                borderRadius={"50%"}
+                src="me.png"
+                width="180px"
+                height="180px"
+                objectFit={"cover"}
+                boxShadow="lg"
+              />
+            </motion.div>
+
+            <motion.div
+              style={{
+                fontSize: headingFont,
+                fontWeight: "bold",
+                textAlign: "center",
+              }}
+            >
+              Hello <WavingHand /> ! Namaste <Namaste /> !!
+            </motion.div>
+          </motion.div>
+        </Box>
       </Box>
     </Box>
   );

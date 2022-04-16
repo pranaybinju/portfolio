@@ -5,7 +5,7 @@ import { Link } from "@chakra-ui/react";
 
 const Contact = () => {
   return (
-    <>
+    <Box w={["100vh", "100vh", "100vh", "100vh", "100%"]}>
       <Text mb="1rem" fontWeight={"bold"} mx="3rem" fontSize={"3rem"}>
         <span
           style={{
@@ -24,24 +24,23 @@ const Contact = () => {
       </Text>
       <Box
         mx="3rem"
-        display={"grid"}
-        gridGap="1rem"
-        gridTemplateColumns="1fr 1fr"
+        display={"flex"}
+        flexDirection={["column", "column", "column", "column", "row"]}
+        justifyContent={"space-between"}
         mb="5rem"
       >
-        <Flex justifyContent={"space-between"} direction={"column"}>
+        <Flex
+          mb={["0.8rem", "0.8rem", "0.8rem", "0.8rem", 0]}
+          justifyContent={"space-between"}
+          direction={"column"}
+        >
           <Text>{"Want to get in touch? Just drop me a message!"}</Text>
-          <Flex justifyContent={"space-between"}>
+          <Flex
+            flexDirection={["column", "column", "column", "row"]}
+            justifyContent={"space-between"}
+          >
             <Flex alignItems="center">
-              <Image
-                _hover={{
-                  transform: "scale(1.2)",
-                }}
-                mr="0.8rem"
-                width={8}
-                height={8}
-                src={"./gmail.svg"}
-              />
+              <Image mr="0.8rem" width={8} height={8} src={"./gmail.svg"} />
               <NextLink href="mailto:pranaybinju2810@gmail.com" passHref>
                 <Link textDecoration={"underline"} color="gray">
                   pranaybinju2810@gmail.com
@@ -88,8 +87,16 @@ const Contact = () => {
         </Flex>
 
         <Flex justifyContent={"space-between"} direction={"column"}>
-          <Text textAlign={"right"}>You can also discover me here 👇</Text>
-          <Flex alignItems={"center"} justifyContent="flex-end">
+          <Text>Also, discover me here 👇</Text>
+          <Flex
+            justifyContent={[
+              "flex-start",
+              "flex-start",
+              "flex-start",
+              "flex-end",
+            ]}
+            alignItems={"center"}
+          >
             <Flex justifyContent={"space-between"} alignItems={"center"}>
               <NextLink href="https://github.com/pranaybinju" passHref>
                 <Link>
@@ -137,7 +144,7 @@ const Contact = () => {
           </Flex>
         </Flex>
       </Box>
-    </>
+    </Box>
   );
 };
 

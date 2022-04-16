@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Content from "./components/Content";
 import { Box, Flex, Text } from "@chakra-ui/react";
@@ -26,7 +25,7 @@ export default function Home() {
       <footer className={styles.footer}>
         <Flex justifyContent={"center"} alignItems="center">
           <Text fontSize="0.8rem">
-            crafted with&nbsp;❤️&nbsp;by Pranay Binju
+            crafted with&nbsp;❤️ &nbsp; by Pranay Binju
           </Text>
         </Flex>
       </footer>
