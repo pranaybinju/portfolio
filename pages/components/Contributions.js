@@ -5,7 +5,7 @@ import NextLink from "next/link";
 
 const Contributions = () => {
   return (
-    <Box w={["100vh", "100vh", "100vh", "100vh", "100%"]}>
+    <Box width={"100vmax"}>
       <Box>
         <Text mb="1rem" fontWeight={"bold"} mx="3rem" fontSize={"3rem"}>
           <span
@@ -26,7 +26,7 @@ const Contributions = () => {
         <Box
           mx="3rem"
           display={"grid"}
-          gridTemplateColumns={["auto", "auto", "auto", "auto", "1fr 1fr 1fr"]}
+          gridTemplateColumns={["auto", "auto", "auto", "1fr 1fr 1fr"]}
           gridGap="2rem"
           mb="5rem"
         >

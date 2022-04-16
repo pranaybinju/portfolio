@@ -5,7 +5,7 @@ import { Link } from "@chakra-ui/react";
 
 const Contact = () => {
   return (
-    <Box w={["100vh", "100vh", "100vh", "100vh", "100%"]}>
+    <Box width={"100vmax"}>
       <Text mb={"0.8rem"} fontWeight={"bold"} mx="3rem" fontSize={"3rem"}>
         <span
           style={{
@@ -25,7 +25,7 @@ const Contact = () => {
       <Box
         mx="3rem"
         display={"flex"}
-        flexDirection={["column", "column", "column", "column", "row"]}
+        flexDirection={["column", "column", "column", "row"]}
         justifyContent={"space-between"}
         mb="5rem"
       >

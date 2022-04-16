@@ -142,17 +142,12 @@ const Skills = () => {
       </Text>
 
       <Flex width={"100%"} flex={1}>
-        <Box
-          width={["100vh", "100vh", "100vh", "100vh", "100%"]}
-          bg="#fafafa"
-          mb="8rem"
-          h="25rem"
-        >
+        <Box width={"100vmax"} bg="#fafafa" mb="8rem" h="25rem">
           <Box
             px="5rem"
             position="relative"
             height={"100%"}
-            width={["100vh", "100vh", "100vh", "100vh", "100%"]}
+            width={["100vh", "100vh", "100vh", "100%"]}
           >
             {skillData.map((datum, index) => (
               <Box

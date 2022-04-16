@@ -17,8 +17,8 @@ const Intro = () => {
 
   return (
     <Box>
-      <Box w={"100vh"} display={["block", "block", "block", "none"]}>
-        <Box display="flex" flex={1} flexDirection={"column"}>
+      <Box display={["block", "block", "block", "block", "none"]}>
+        <Box width={"100vmax"} display="flex" flex={1} flexDirection={"column"}>
           <Box>
             <Box
               style={{
@@ -121,7 +121,7 @@ const Intro = () => {
         </Box>
       </Box>
       <Box
-        display={["none", "none", "none", "block"]}
+        display={["none", "none", "none", "none", "block"]}
         width={"100vw"}
         mb="1rem"
         height="300vh"
