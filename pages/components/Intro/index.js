@@ -16,14 +16,14 @@ const Intro = () => {
   const x1 = useTransform(scrollY, [0, 850], ["-60%", "0vw"]);
 
   return (
-    <Box w="100vh">
-      <Box display={["block", "block", "block", "none"]}>
-        <Box w="100%" display="flex" flex={1} flexDirection={"column"}>
+    <Box>
+      <Box w={"100vh"} display={["block", "block", "block", "none"]}>
+        <Box display="flex" flex={1} flexDirection={"column"}>
           <Box>
             <Box
               style={{
                 height: "100%",
-
+                marginBottom: "0.8rem",
                 justifyContent: "center",
                 alignItems: "center",
                 display: "flex",
@@ -46,9 +46,19 @@ const Intro = () => {
                   fontSize: headingFont,
                   fontWeight: "bold",
                   textAlign: "center",
+                  marginTop: "0.8rem",
                 }}
               >
-                Hello <WavingHand /> ! Namaste <Namaste /> !!
+                Hello <WavingHand /> !
+              </motion.div>
+              <motion.div
+                style={{
+                  fontSize: headingFont,
+                  fontWeight: "bold",
+                  textAlign: "center",
+                }}
+              >
+                Namaste <Namaste /> !!
               </motion.div>
             </Box>
           </Box>
@@ -56,7 +66,7 @@ const Intro = () => {
           <Box
             w="100%"
             style={{
-              padding: "2rem",
+              marginBottom: "2rem",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -99,20 +109,13 @@ const Intro = () => {
               textAlign="center"
               w={"30rem"}
             >
-              <Box display="grid" gridTemplateColumns={"auto auto"}>
-                <Text>{`Computer Science ❤️ `}</Text>
-                <Text>{` Unpresuming Engineer 👨‍💻 `}</Text>
-              </Box>
+              <Text>{`Computer Science ❤️ `}</Text>
+              <Text>{` Unpresuming Engineer 👨‍💻 `}</Text>
+              <Text>{`Chess enthusiast ♘ `}</Text>
+              <Text>{` Curious about Cosmos 🌌 `}</Text>
 
-              <Box display="grid" gridTemplateColumns={"auto auto"}>
-                <Text>{`Chess enthusiast ♘ `}</Text>
-                <Text>{` Curious about Cosmos 🌌 `}</Text>
-              </Box>
-
-              <Box display="grid" gridTemplateColumns={"auto auto"}>
-                <Text>{`Football fan ⚽️ `}</Text>
-                <Text>{`a Student for Life 🤓 `}</Text>
-              </Box>
+              <Text>{`Football fan ⚽️ `}</Text>
+              <Text>{`a Student for Life 🤓 `}</Text>
             </Box>
           </Box>
         </Box>

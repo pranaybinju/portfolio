@@ -158,9 +158,24 @@ const Skills = () => {
               <Box
                 as={motion.div}
                 backgroundColor="white"
-                borderRadius={datum.type === "secondary" ? "30px" : "40px"}
-                height={datum.type === "secondary" ? "60px" : "80px"}
-                width={datum.type === "secondary" ? "60px" : "80px"}
+                borderRadius={[
+                  datum.type === "secondary" ? "20px" : "25px",
+                  datum.type === "secondary" ? "20px" : "25px",
+                  datum.type === "secondary" ? "20px" : "25px",
+                  datum.type === "secondary" ? "30px" : "40px",
+                ]}
+                height={[
+                  datum.type === "secondary" ? "40px" : "50px",
+                  datum.type === "secondary" ? "40px" : "50px",
+                  datum.type === "secondary" ? "40px" : "50px",
+                  datum.type === "secondary" ? "60px" : "80px",
+                ]}
+                width={[
+                  datum.type === "secondary" ? "40px" : "50px",
+                  datum.type === "secondary" ? "40px" : "50px",
+                  datum.type === "secondary" ? "40px" : "50px",
+                  datum.type === "secondary" ? "60px" : "80px",
+                ]}
                 position="absolute"
                 left={datum.x}
                 top={datum.y}
@@ -174,8 +189,19 @@ const Skills = () => {
                 key={datum.id}
               >
                 <Image
-                  width={datum.type === "secondary" ? 8 : 10}
-                  height={datum.type === "secondary" ? 8 : 10}
+                  width={[
+                    datum.type === "secondary" ? 6 : 8,
+                    datum.type === "secondary" ? 6 : 8,
+                    datum.type === "secondary" ? 6 : 8,
+
+                    datum.type === "secondary" ? 8 : 10,
+                  ]}
+                  height={[
+                    datum.type === "secondary" ? 6 : 8,
+                    datum.type === "secondary" ? 6 : 8,
+                    datum.type === "secondary" ? 6 : 8,
+                    datum.type === "secondary" ? 8 : 10,
+                  ]}
                   src={datum.src}
                 />
               </Box>

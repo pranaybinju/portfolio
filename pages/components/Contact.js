@@ -6,7 +6,7 @@ import { Link } from "@chakra-ui/react";
 const Contact = () => {
   return (
     <Box w={["100vh", "100vh", "100vh", "100vh", "100%"]}>
-      <Text mb="1rem" fontWeight={"bold"} mx="3rem" fontSize={"3rem"}>
+      <Text mb={"0.8rem"} fontWeight={"bold"} mx="3rem" fontSize={"3rem"}>
         <span
           style={{
             backgroundColor: "#f3ec78",
@@ -30,25 +30,34 @@ const Contact = () => {
         mb="5rem"
       >
         <Flex
-          mb={["0.8rem", "0.8rem", "0.8rem", "0.8rem", 0]}
+          mb={["0.5rem", "0.5rem", "0.5rem", 0]}
           justifyContent={"space-between"}
           direction={"column"}
         >
-          <Text>{"Want to get in touch? Just drop me a message!"}</Text>
+          <Text
+            mb={["0.8rem", "0.8rem", "0.8rem", 0]}
+            fontSize={["1.2rem", "1.2rem", "1.2rem", "1rem"]}
+          >
+            {"Want to get in touch? Just drop me a message!"}
+          </Text>
           <Flex
             flexDirection={["column", "column", "column", "row"]}
             justifyContent={"space-between"}
           >
-            <Flex alignItems="center">
+            <Flex mb={["0.5rem", "0.5rem", "0.5rem", 0]} alignItems="center">
               <Image mr="0.8rem" width={8} height={8} src={"./gmail.svg"} />
               <NextLink href="mailto:pranaybinju2810@gmail.com" passHref>
-                <Link textDecoration={"underline"} color="gray">
+                <Link
+                  fontSize={["1.2rem", "1.2rem", "1.2rem", "1rem"]}
+                  textDecoration={"underline"}
+                  color="gray"
+                >
                   pranaybinju2810@gmail.com
                 </Link>
               </NextLink>
             </Flex>
 
-            <Flex>
+            <Flex mb={["0.8rem", "0.8rem", "0.8rem", 0]}>
               <Flex alignItems="center">
                 <NextLink
                   href="https://www.linkedin.com/in/pranay-binju-94b7bb180/"
@@ -60,8 +69,8 @@ const Contact = () => {
                         transform: "scale(1.2)",
                       }}
                       mr="0.5rem"
-                      width={10}
-                      height={10}
+                      width={[12, 12, 12, 10]}
+                      height={[12, 12, 12, 10]}
                       src={"./linkedin.svg"}
                     />
                   </Link>
@@ -75,8 +84,8 @@ const Contact = () => {
                       _hover={{
                         transform: "scale(1.2)",
                       }}
-                      width={8}
-                      height={8}
+                      width={[10, 10, 10, 8]}
+                      height={[10, 10, 10, 8]}
                       src={"./reddit.png"}
                     />
                   </Link>
@@ -87,7 +96,12 @@ const Contact = () => {
         </Flex>
 
         <Flex justifyContent={"space-between"} direction={"column"}>
-          <Text>Also, discover me here 👇</Text>
+          <Text
+            mb={["0.8rem", "0.8rem", "0.8rem", 0]}
+            fontSize={["1.2rem", "1.2rem", "1.2rem", "1rem"]}
+          >
+            Also, discover me here 👇
+          </Text>
           <Flex
             justifyContent={[
               "flex-start",
@@ -102,8 +116,8 @@ const Contact = () => {
                 <Link>
                   <Image
                     mr="0.5rem"
-                    width={8}
-                    height={8}
+                    width={[12, 12, 12, 8]}
+                    height={[12, 12, 12, 8]}
                     src={"./github.svg"}
                     _hover={{
                       transform: "scale(1.2)",
@@ -118,8 +132,8 @@ const Contact = () => {
                 <Link>
                   <Image
                     mr="0.5rem"
-                    width={7}
-                    height={7}
+                    width={[10, 10, 10, 7]}
+                    height={[10, 10, 10, 7]}
                     src={"./stack-overflow.svg"}
                     _hover={{
                       transform: "scale(1.2)",
@@ -131,8 +145,8 @@ const Contact = () => {
               <NextLink href="https://leetcode.com/pranaybinju2810/" passHref>
                 <Link>
                   <Image
-                    width={7}
-                    height={7}
+                    width={[10, 10, 10, 7]}
+                    height={[10, 10, 10, 7]}
                     _hover={{
                       transform: "scale(1.2)",
                     }}
