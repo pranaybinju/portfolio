@@ -16,6 +16,21 @@ export default function Home() {
           rel="stylesheet"
         />
         <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LXVZ2X1HBF"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LXVZ2X1HBF');
+          `,
+          }}
+        ></script>
+        <script
           dangerouslySetInnerHTML={{
             __html: `history.scrollRestoration = "manual"`,
           }}
