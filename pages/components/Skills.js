@@ -165,7 +165,7 @@ const Skills = () => {
             width={["100vh", "100vh", "100vh", "100%"]}
           >
             {skillData.map((datum, index) => (
-              <Tooltip label={datum.name}>
+              <Tooltip key={datum.name} label={datum.name}>
                 <Box
                   as={motion.div}
                   backgroundColor="white"
@@ -197,7 +197,6 @@ const Skills = () => {
                   justifyContent={"center"}
                   alignItems="center"
                   boxShadow={"md"}
-                  key={datum.name}
                 >
                   <Image
                     width={[6, 6, 6, datum.type === "secondary" ? 8 : 10]}
