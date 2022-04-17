@@ -11,9 +11,7 @@ export default function Home() {
         <meta name="description" content="My portfolio" />
         <meta
           property="og:image"
-          content={
-            "https://github.com/pranaybinju/portfolio/blob/master/public/me.png"
-          }
+          content={"https://pranay-binju.vercel.app/me.png"}
           key="ogimage"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
