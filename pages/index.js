@@ -14,11 +14,13 @@ export default function Home() {
           content={"https://pranay-binju.vercel.app/portfolio.png"}
           key="ogimage"
         />
+        <meta property="og:title" content={"Portfolio"} key="ogtitle" />
         <meta
           property="og:description"
           content={"Check out my work here!"}
-          key="ogdescription"
+          key="ogdesc"
         />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
