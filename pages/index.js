@@ -9,6 +9,7 @@ export default function Home() {
       <Head>
         <title>Portfolio</title>
         <meta name="description" content="My portfolio" />
+        <meta property="og:image" content={"me.png"} key="ogimage" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
