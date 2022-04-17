@@ -49,6 +49,7 @@ const Contributions = () => {
                   w="100%"
                   mb={"0.8rem"}
                   src="./blog.png"
+                  alt={"blogs"}
                 ></Image>
                 <Text fontSize={"1.2rem"} px="0.8rem">
                   Tech Blogs:
@@ -81,6 +82,7 @@ const Contributions = () => {
                   w="100%"
                   mb={"0.8rem"}
                   src="./testimonial.png"
+                  alt={"testimonial"}
                 ></Image>
 
                 <Text fontSize={"1.2rem"} px="0.8rem">
@@ -114,6 +116,7 @@ const Contributions = () => {
                   w="100%"
                   mb={"0.8rem"}
                   src="./star.png"
+                  alt={"star-rating"}
                 ></Image>
                 <Text fontSize={"1.2rem"} px="0.8rem">
                   Star-rating component:

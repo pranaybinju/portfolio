@@ -6,10 +6,11 @@ export const Namaste = () => (
     style={{ display: "inline-block" }}
     animate={{ y: -5 }}
     transition={{
-      yoyo: Infinity,
+      repeatType: "reverse",
+      repeat: Infinity,
       from: 0,
       duration: 1,
-      ease: "backOut",
+      ease: "linear",
     }}
   >
     🙏

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 import Namaste from "./Namaste";
 import WavingHand from "./WavingHand";
 
@@ -37,7 +37,8 @@ const Intro = () => {
                   width="180px"
                   height="180px"
                   objectFit={"cover"}
-                  boxShadow="lg"
+                  boxShadow="0 0 25px #D3D3D3"
+                  alt="me"
                 />
               </Box>
 
@@ -101,7 +102,7 @@ const Intro = () => {
               mb="0.8rem"
               fontSize={"1.8rem"}
             >
-              Senior Front-End Engineer at Kiprosh
+              Senior Front-End Engineer @Kiprosh
             </Text>
             <Box
               fontSize={"1.1rem"}
@@ -216,7 +217,8 @@ const Intro = () => {
                 width="180px"
                 height="180px"
                 objectFit={"cover"}
-                boxShadow="lg"
+                boxShadow="0 0 25px #D3D3D3"
+                alt="me"
               />
             </motion.div>
 

@@ -6,7 +6,8 @@ const WavingHand = () => (
     style={{ display: "inline-block" }}
     animate={{ rotate: 10 }}
     transition={{
-      yoyo: Infinity,
+      repeatType: "reverse",
+      repeat: Infinity,
       from: 0,
       duration: 1,
       type: "spring",

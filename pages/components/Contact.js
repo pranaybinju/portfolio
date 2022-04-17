@@ -35,7 +35,7 @@ const Contact = () => {
           direction={"column"}
         >
           <Text
-            mb={["0.8rem", "0.8rem", "0.8rem", 0]}
+            mb={["0.5rem", "0.5rem", "0.5rem", 0]}
             fontSize={["1.2rem", "1.2rem", "1.2rem", "1rem"]}
           >
             {"Want to get in touch? Just drop me a message!"}
@@ -43,15 +43,18 @@ const Contact = () => {
           <Flex
             flexDirection={["column", "column", "column", "row"]}
             justifyContent={"space-between"}
+            mt="0.2rem"
           >
             <Flex mb={["0.5rem", "0.5rem", "0.5rem", 0]} alignItems="center">
-              <Image mr="0.8rem" width={8} height={8} src={"./gmail.svg"} />
+              <Image
+                alt={"gmail"}
+                mr="0.8rem"
+                width={[10, 10, 10, 8]}
+                height={[10, 10, 10, 8]}
+                src={"./gmail.svg"}
+              />
               <NextLink href="mailto:pranaybinju2810@gmail.com" passHref>
-                <Link
-                  fontSize={["1.2rem", "1.2rem", "1.2rem", "1rem"]}
-                  textDecoration={"underline"}
-                  color="gray"
-                >
+                <Link fontSize={"1.1rem"} fontWeight={700} mr="1.5rem">
                   pranaybinju2810@gmail.com
                 </Link>
               </NextLink>
@@ -65,12 +68,13 @@ const Contact = () => {
                 >
                   <Link>
                     <Image
+                      alt={"linkedin"}
                       _hover={{
                         transform: "scale(1.2)",
                       }}
                       mr="0.5rem"
-                      width={[12, 12, 12, 10]}
-                      height={[12, 12, 12, 10]}
+                      width={[10, 10, 10, 8]}
+                      height={[10, 10, 10, 8]}
                       src={"./linkedin.svg"}
                     />
                   </Link>
@@ -81,6 +85,7 @@ const Contact = () => {
                 >
                   <Link>
                     <Image
+                      alt={"reddit"}
                       _hover={{
                         transform: "scale(1.2)",
                       }}
@@ -100,7 +105,7 @@ const Contact = () => {
             mb={["0.8rem", "0.8rem", "0.8rem", 0]}
             fontSize={["1.2rem", "1.2rem", "1.2rem", "1rem"]}
           >
-            Also, discover me here 👇
+            Discover me here 👇
           </Text>
           <Flex
             justifyContent={[
@@ -115,6 +120,7 @@ const Contact = () => {
               <NextLink href="https://github.com/pranaybinju" passHref>
                 <Link>
                   <Image
+                    alt={"github"}
                     mr="0.5rem"
                     width={[12, 12, 12, 8]}
                     height={[12, 12, 12, 8]}
@@ -131,6 +137,7 @@ const Contact = () => {
               >
                 <Link>
                   <Image
+                    alt={"stack-overflow"}
                     mr="0.5rem"
                     width={[10, 10, 10, 7]}
                     height={[10, 10, 10, 7]}
@@ -145,6 +152,7 @@ const Contact = () => {
               <NextLink href="https://leetcode.com/pranaybinju2810/" passHref>
                 <Link>
                   <Image
+                    alt={"leetcode"}
                     width={[10, 10, 10, 7]}
                     height={[10, 10, 10, 7]}
                     _hover={{

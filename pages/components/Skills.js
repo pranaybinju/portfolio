@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Flex, Image, Text, chakra, keyframes } from "@chakra-ui/react";
-import { motion, isValidMotionProp } from "framer-motion";
+import { Box, Flex, Image, Text, keyframes, Tooltip } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 const animationKeyframes = keyframes`
 0% { transform: translateY(0px); }
@@ -8,11 +8,10 @@ const animationKeyframes = keyframes`
 100% { transform:translateY(0px); }
 `;
 
-const animation = `${animationKeyframes} 3s ease-in-out infinite`;
-
 const skillData = [
   {
     id: 1,
+    name: "MongoDB",
     x: "20%",
     y: "15%",
     type: "secondary",
@@ -20,30 +19,35 @@ const skillData = [
   },
   {
     id: 2,
+    name: "Git",
     x: "25%",
     y: "40%",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
   },
   {
     id: 3,
+    name: "CSS3",
     x: "40%",
     y: "22%",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg",
   },
   {
     id: 4,
+    name: "NextJS",
     x: "65%",
     y: "15%",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
   },
   {
     id: 5,
+    name: "React & React Native",
     x: "45%",
     y: "60%",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
     id: 6,
+    name: "PostgreSQL",
     x: "65%",
     y: "50%",
     type: "secondary",
@@ -51,12 +55,14 @@ const skillData = [
   },
   {
     id: 7,
+    name: "TypeScript",
     x: "55%",
     y: "45%",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   },
   {
     id: 8,
+    name: "NodeJS",
     x: "20%",
     y: "70%",
     type: "secondary",
@@ -64,6 +70,7 @@ const skillData = [
   },
   {
     id: 9,
+    name: "D3.js",
     x: "30%",
     y: "10%",
     type: "secondary",
@@ -71,42 +78,49 @@ const skillData = [
   },
   {
     id: 10,
+    name: "HTML5",
     x: "35%",
     y: "45%",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg",
   },
   {
     id: 11,
+    name: "JavaScript",
     x: "50%",
     y: "22%",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
     id: 12,
+    name: "Jest",
     x: "75%",
     y: "25%",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
   },
   {
     id: 13,
+    name: "jQuery",
     x: "75%",
     y: "60%",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg",
   },
   {
     id: 14,
+    name: "Redux",
     x: "58%",
     y: "70%",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
   },
   {
     id: 15,
+    name: "GraphQL",
     x: "32%",
     y: "70%",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
   },
   {
     id: 15,
+    name: "C++",
     x: "15%",
     y: "45%",
     type: "secondary",
@@ -115,6 +129,7 @@ const skillData = [
 
   {
     id: 16,
+    name: "Webpack",
     x: "58%",
     y: "10%",
     type: "secondary",
@@ -150,56 +165,48 @@ const Skills = () => {
             width={["100vh", "100vh", "100vh", "100%"]}
           >
             {skillData.map((datum, index) => (
-              <Box
-                as={motion.div}
-                backgroundColor="white"
-                borderRadius={[
-                  datum.type === "secondary" ? "20px" : "25px",
-                  datum.type === "secondary" ? "20px" : "25px",
-                  datum.type === "secondary" ? "20px" : "25px",
-                  datum.type === "secondary" ? "30px" : "40px",
-                ]}
-                height={[
-                  datum.type === "secondary" ? "40px" : "50px",
-                  datum.type === "secondary" ? "40px" : "50px",
-                  datum.type === "secondary" ? "40px" : "50px",
-                  datum.type === "secondary" ? "60px" : "80px",
-                ]}
-                width={[
-                  datum.type === "secondary" ? "40px" : "50px",
-                  datum.type === "secondary" ? "40px" : "50px",
-                  datum.type === "secondary" ? "40px" : "50px",
-                  datum.type === "secondary" ? "60px" : "80px",
-                ]}
-                position="absolute"
-                left={datum.x}
-                top={datum.y}
-                animation={`${animationKeyframes} 5s ease-in-out 0.${
-                  index + 1
-                }s infinite`}
-                display="flex"
-                justifyContent={"center"}
-                alignItems="center"
-                boxShadow={"md"}
-                key={datum.id}
-              >
-                <Image
-                  width={[
-                    datum.type === "secondary" ? 6 : 8,
-                    datum.type === "secondary" ? 6 : 8,
-                    datum.type === "secondary" ? 6 : 8,
-
-                    datum.type === "secondary" ? 8 : 10,
+              <Tooltip label={datum.name}>
+                <Box
+                  as={motion.div}
+                  backgroundColor="white"
+                  borderRadius={[
+                    datum.type === "secondary" ? "20px" : "25px",
+                    datum.type === "secondary" ? "20px" : "25px",
+                    datum.type === "secondary" ? "20px" : "25px",
+                    datum.type === "secondary" ? "30px" : "40px",
                   ]}
                   height={[
-                    datum.type === "secondary" ? 6 : 8,
-                    datum.type === "secondary" ? 6 : 8,
-                    datum.type === "secondary" ? 6 : 8,
-                    datum.type === "secondary" ? 8 : 10,
+                    datum.type === "secondary" ? "40px" : "50px",
+                    datum.type === "secondary" ? "40px" : "50px",
+                    datum.type === "secondary" ? "40px" : "50px",
+                    datum.type === "secondary" ? "60px" : "80px",
                   ]}
-                  src={datum.src}
-                />
-              </Box>
+                  width={[
+                    datum.type === "secondary" ? "40px" : "50px",
+                    datum.type === "secondary" ? "40px" : "50px",
+                    datum.type === "secondary" ? "40px" : "50px",
+                    datum.type === "secondary" ? "60px" : "80px",
+                  ]}
+                  position="absolute"
+                  left={datum.x}
+                  top={datum.y}
+                  animation={`${animationKeyframes} 5s ease-in-out 0.${
+                    index + 1
+                  }s infinite`}
+                  display="flex"
+                  justifyContent={"center"}
+                  alignItems="center"
+                  boxShadow={"md"}
+                  key={datum.name}
+                >
+                  <Image
+                    width={[6, 6, 6, datum.type === "secondary" ? 8 : 10]}
+                    height={[6, 6, 6, datum.type === "secondary" ? 8 : 10]}
+                    src={datum.src}
+                    alt={datum.name}
+                  />
+                </Box>
+              </Tooltip>
             ))}
           </Box>
         </Box>
