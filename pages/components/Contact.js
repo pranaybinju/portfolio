@@ -132,7 +132,7 @@ const Contact = () => {
                 </Link>
               </NextLink>
               <NextLink
-                href="https://stackoverflow.com/users/4397508/pranay-binju"
+                href="https://stackoverflow.com/users/4397508/pranay-binju?tab=profile"
                 passHref
               >
                 <Link>
