@@ -8,8 +8,8 @@ const Intro = () => {
   const { scrollY } = useViewportScroll();
 
   const scale = useTransform(scrollY, [0, 850], [2, 1]);
-  const y = useTransform(scrollY, [0, 850], ["40vh", "0vh"]);
-  const x = useTransform(scrollY, [0, 850], ["-25vw", "0vw"]);
+  const y = useTransform(scrollY, [0, 850], ["0vh", "0vh"]);
+  const x = useTransform(scrollY, [0, 850], ["-35vw", "0vw"]);
   const marginTop = useTransform(scrollY, [0, 850], ["-220px", "0px"]);
   const headingFont = useTransform(scrollY, [0, 850], ["3.2rem", "3rem"]);
 
@@ -44,7 +44,7 @@ const Intro = () => {
 
               <motion.div
                 style={{
-                  fontSize: headingFont,
+                  //fontSize: headingFont,
                   fontWeight: "bold",
                   textAlign: "center",
                   marginTop: "0.8rem",
@@ -54,7 +54,7 @@ const Intro = () => {
               </motion.div>
               <motion.div
                 style={{
-                  fontSize: headingFont,
+                  // fontSize: headingFont,
                   fontWeight: "bold",
                   textAlign: "center",
                 }}
@@ -207,12 +207,15 @@ const Intro = () => {
             }}
           >
             <motion.div
-              style={{
-                marginTop,
-              }}
+              style={
+                {
+                  // marginTop,
+                }
+              }
             >
               <Image
                 borderRadius={"50%"}
+                marginBottom="1rem"
                 src="me.png"
                 width="180px"
                 height="180px"
@@ -224,7 +227,8 @@ const Intro = () => {
 
             <motion.div
               style={{
-                fontSize: headingFont,
+                fontSize: "2rem",
+
                 fontWeight: "bold",
                 textAlign: "center",
               }}
