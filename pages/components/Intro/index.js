@@ -9,7 +9,7 @@ const Intro = () => {
 
   const scale = useTransform(scrollY, [0, 850], [2, 1]);
   const y = useTransform(scrollY, [0, 850], ["0vh", "0vh"]);
-  const x = useTransform(scrollY, [0, 850], ["-35vw", "0vw"]);
+  const x = useTransform(scrollY, [0, 850], ["-25vw", "0vw"]);
   const marginTop = useTransform(scrollY, [0, 850], ["-220px", "0px"]);
   const headingFont = useTransform(scrollY, [0, 850], ["3.2rem", "3rem"]);
 
