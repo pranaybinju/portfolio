@@ -197,7 +197,6 @@ const Skills = () => {
                   justifyContent={"center"}
                   alignItems="center"
                   boxShadow={"md"}
-                  style={{ willChange: "transform" }}
                 >
                   <Image
                     width={[6, 6, 6, datum.type === "secondary" ? 8 : 10]}
