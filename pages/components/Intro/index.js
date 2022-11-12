@@ -44,19 +44,19 @@ const Intro = () => {
 
               <motion.div
                 style={{
-                  //fontSize: headingFont,
                   fontWeight: "bold",
                   textAlign: "center",
                   marginTop: "0.8rem",
+                  fontSize: "3rem",
                 }}
               >
                 Hello <WavingHand /> !
               </motion.div>
               <motion.div
                 style={{
-                  // fontSize: headingFont,
                   fontWeight: "bold",
                   textAlign: "center",
+                  fontSize: "3rem",
                 }}
               >
                 Namaste <Namaste /> !!
@@ -138,6 +138,7 @@ const Intro = () => {
               alignItems: "center",
               flexDirection: "column",
               x: x1,
+              willChange: "transform",
             }}
           >
             <Text
@@ -204,15 +205,10 @@ const Intro = () => {
               scale,
               y,
               x,
+              willChange: "transform",
             }}
           >
-            <motion.div
-              style={
-                {
-                  // marginTop,
-                }
-              }
-            >
+            <motion.div>
               <Image
                 borderRadius={"50%"}
                 marginBottom="1rem"
