@@ -9,11 +9,11 @@ const Intro = () => {
 
   const scale = useTransform(scrollY, [0, 850], [2, 1]);
   const y = useTransform(scrollY, [0, 850], ["0vh", "0vh"]);
-  const x = useTransform(scrollY, [0, 850], ["-25vw", "0vw"]);
+  const x = useTransform(scrollY, [0, 850], ["25vw", "0vw"]);
   const marginTop = useTransform(scrollY, [0, 850], ["-220px", "0px"]);
   const headingFont = useTransform(scrollY, [0, 850], ["3.2rem", "3rem"]);
 
-  const x1 = useTransform(scrollY, [0, 850], ["-60%", "0vw"]);
+  const x1 = useTransform(scrollY, [0, 850], ["100%", "-5vw"]);
 
   return (
     <Box>
@@ -128,6 +128,45 @@ const Intro = () => {
         height="300vh"
       >
         <Box height="100vh" display="flex" position="sticky" top="0px">
+        <motion.div
+            style={{
+              height: "100%",
+              width: "50vw",
+
+              justifyContent: "center",
+              alignItems: "center",
+              display: "flex",
+              flexDirection: "column",
+              scale,
+              y,
+              x,
+              willChange: "transform",
+            }}
+          >
+            <motion.div>
+              <Image
+                borderRadius={"50%"}
+                marginBottom="1rem"
+                src="me.png"
+                width="180px"
+                height="180px"
+                objectFit={"cover"}
+                boxShadow="0 0 25px #D3D3D3"
+                alt="me"
+              />
+            </motion.div>
+
+            <motion.div
+              style={{
+                fontSize: "2rem",
+
+                fontWeight: "bold",
+                textAlign: "center",
+              }}
+            >
+              Hello <WavingHand /> ! Namaste <Namaste /> !!
+            </motion.div>
+          </motion.div>
           <motion.div
             style={{
               height: "100%",
@@ -169,7 +208,7 @@ const Intro = () => {
               mb="0.8rem"
               fontSize={"1.8rem"}
             >
-              Senior Front-End Engineer @Kiprosh
+              Senior Front-End Engineer @Lawlytics
             </Text>
             <Box
               fontSize={"1.1rem"}
@@ -193,45 +232,7 @@ const Intro = () => {
               </Box>
             </Box>
           </motion.div>
-          <motion.div
-            style={{
-              height: "100%",
-              width: "50vw",
-
-              justifyContent: "center",
-              alignItems: "center",
-              display: "flex",
-              flexDirection: "column",
-              scale,
-              y,
-              x,
-              willChange: "transform",
-            }}
-          >
-            <motion.div>
-              <Image
-                borderRadius={"50%"}
-                marginBottom="1rem"
-                src="me.png"
-                width="180px"
-                height="180px"
-                objectFit={"cover"}
-                boxShadow="0 0 25px #D3D3D3"
-                alt="me"
-              />
-            </motion.div>
-
-            <motion.div
-              style={{
-                fontSize: "2rem",
-
-                fontWeight: "bold",
-                textAlign: "center",
-              }}
-            >
-              Hello <WavingHand /> ! Namaste <Namaste /> !!
-            </motion.div>
-          </motion.div>
+          
         </Box>
       </Box>
     </Box>

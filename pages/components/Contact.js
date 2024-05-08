@@ -66,32 +66,17 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/pranay-binju-94b7bb180/"
                   passHref
                 >
-                  <Link>
+                  <Link target="__blank">
                     <Image
                       alt={"linkedin"}
                       _hover={{
                         transform: "scale(1.2)",
+                        transition: "transform 500ms ease-out"
                       }}
                       mr="0.5rem"
                       width={[10, 10, 10, 8]}
                       height={[10, 10, 10, 8]}
                       src={"./linkedin.svg"}
-                    />
-                  </Link>
-                </NextLink>
-                <NextLink
-                  href="https://www.reddit.com/user/pranayB2810"
-                  passHref
-                >
-                  <Link>
-                    <Image
-                      alt={"reddit"}
-                      _hover={{
-                        transform: "scale(1.2)",
-                      }}
-                      width={[10, 10, 10, 8]}
-                      height={[10, 10, 10, 8]}
-                      src={"./reddit.png"}
                     />
                   </Link>
                 </NextLink>
@@ -118,7 +103,7 @@ const Contact = () => {
           >
             <Flex justifyContent={"space-between"} alignItems={"center"}>
               <NextLink href="https://github.com/pranaybinju" passHref>
-                <Link>
+                <Link target='__blank'>
                   <Image
                     alt={"github"}
                     mr="0.5rem"
@@ -127,6 +112,7 @@ const Contact = () => {
                     src={"./github.svg"}
                     _hover={{
                       transform: "scale(1.2)",
+                      transition: "transform 500ms ease-out"
                     }}
                   />
                 </Link>
@@ -135,7 +121,7 @@ const Contact = () => {
                 href="https://stackoverflow.com/users/4397508/pranay-binju?tab=profile"
                 passHref
               >
-                <Link>
+                <Link target='__blank'>
                   <Image
                     alt={"stack-overflow"}
                     mr="0.5rem"
@@ -144,21 +130,23 @@ const Contact = () => {
                     src={"./stack-overflow.svg"}
                     _hover={{
                       transform: "scale(1.2)",
+                      transition: "transform 500ms ease-out"
                     }}
                   />
                 </Link>
               </NextLink>
 
-              <NextLink href="https://leetcode.com/pranaybinju2810/" passHref>
-                <Link>
+              <NextLink href="https://codepen.io/pranaybinju2810/collections/" passHref target="__blank">
+                <Link target="__blank">
                   <Image
-                    alt={"leetcode"}
+                    alt={"codepen"}
                     width={[10, 10, 10, 7]}
                     height={[10, 10, 10, 7]}
                     _hover={{
                       transform: "scale(1.2)",
+                      transition: "transform 500ms ease-out"
                     }}
-                    src={"./leetcode.svg"}
+                    src={"./codepen.svg"}
                   />
                 </Link>
               </NextLink>

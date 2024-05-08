@@ -120,11 +120,11 @@ const skillData = [
   },
   {
     id: 15,
-    name: "C++",
+    name: "Go",
     x: "15%",
     y: "45%",
     type: "secondary",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg",
   },
 
   {

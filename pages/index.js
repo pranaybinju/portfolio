@@ -52,7 +52,7 @@ export default function Home() {
       <footer className={styles.footer}>
         <Flex justifyContent={"center"} alignItems="center">
           <Text fontSize="0.9rem">
-            crafted with&nbsp;❤️ &nbsp; by Pranay Binju
+            crafted with&nbsp;❤️ &nbsp;by Pranay Binju
           </Text>
         </Flex>
       </footer>
