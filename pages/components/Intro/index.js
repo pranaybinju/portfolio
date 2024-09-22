@@ -102,7 +102,7 @@ const Intro = () => {
               mb="0.8rem"
               fontSize={"1.8rem"}
             >
-              Senior Front-End Engineer @Kiprosh
+              Senior Front-End Engineer @Lawlytics
             </Text>
             <Box
               fontSize={"1.1rem"}
